@@ -1,0 +1,180 @@
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: yellow;
+}
+
+.my-nav {
+  text-decoration: none;
+  /* width: max-content; */
+  position: relative;
+}
+.my-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: rgb(0, 255, 115);
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+  /* color: yellow; */
+}
+.my-nav a:hover::after {
+  /* color: yellow; */
+  transform: scaleX(1);
+}
+.nav-img {
+  height: 4vh;
+  /* width: 6vw; */
+  border-radius: 50%;
+}
+.navbar-toggler {
+  /* background-color: #4CAF50; */
+  border-color: #4caf50;
+}
+
+/* Add this CSS if you want to change the color of the icon inside the button */
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+/* <!-- ==============Nav-bar End================= --> */
+.icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+#hire-me {
+  background-color: #ff9500;
+  border: none;
+}
+#hire-me:hover {
+  background-color: #ff7900;
+  color: black;
+}
+#download-cv {
+  background-color: #ffc107;
+  transition: background-color 0.3s ease;
+}
+#download-cv:hover {
+  background-color: #000;
+}
+.download-tooltip .tooltip-inner {
+  background-color: #ffc107;
+  color: #000;
+}
+/* =================Socil media Icon============ */
+#linkedin:hover {
+  background-color: #0077b5;
+  color: white;
+  box-shadow: 0px 2px 25px 5px #0077b5;
+}
+.linkedin-tooltip .tooltip-inner {
+  background-color: #0077b5;
+  color: #fff;
+}
+#github:hover {
+  background-color: #171515;
+  /* git */
+  box-shadow: 0px 2px 25px 5px #171515;
+  color: white;
+}
+.github-tooltip .tooltip-inner {
+  background-color: #171515;
+  color: #fff;
+}
+#instagram:hover {
+  background-color: #f56040;
+  box-shadow: 0px 2px 25px 5px #f56040;
+  /* insra */
+
+  color: white;
+}
+.instagram-tooltip .tooltip-inner {
+  background-color: #f56040;
+  color: #fff;
+}
+#twitter:hover {
+  background-color: #1da1f2;
+  box-shadow: 0px 2px 25px 5px #1da1f2;
+  /* twitter */
+
+  color: white;
+}
+.twitter-tooltip .tooltip-inner {
+  background-color: #1da1f2;
+  color: #fff;
+}
+.my-img {
+  height: 35vh;
+  box-shadow: 0px 2px 15px 5px #fff;
+}
+/* ================SKILL============== */
+.skill {
+  background-color: blueviolet;
+  border-radius: 5px;
+  gap: 5px;
+  width: 20vw;
+}
+
+.contect-icon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  color: #ffbd39;
+}
+.contect-icon:hover {
+  background-color: yellow;
+}
+
+/* ============Form======== */
+
+/* .input-field input:focus ~ label,
+.input-field input:valid ~ label {
+  font-size: 0.8rem;
+  top: 10px;
+  transform: translateY(-120%);
+}
+.input-field textarea:focus ~ label,
+.input-field textarea:valid ~ label {
+  font-size: 0.8rem;
+  top: 10px;
+  transform: translateY(-120%);
+}
+*/
+.input-field input {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid white;
+}
+.input-field input:focus {
+  background: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+}
+#floatingInput:focus {
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  border-radius: non;
+}
+
+#floatingTextarea {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid white;
+}
+#floatingTextarea:focus {
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  border-radius: 0%;
+}
+/* ============Form======== */

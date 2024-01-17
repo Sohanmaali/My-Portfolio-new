@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css" />
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+    <!-- <script src="bootstrap-5.2.3-dist/js/"></script> -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ============Font=========== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body class="bg-black text-white">
+    <!-- ==============Nav-bar================= -->
+    <header class="sticky-top bg-black">
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container">
+          <a class="navbar-brand h1 fw-bold fs-1 text-light" href="index.html"
+            >SOHAN</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon tgl-btn"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="row col-md-6">
+              <div
+                class="navbar-nav justify-content-between align-items-center fs-5 my-nav"
+              >
+                <a class="my-nav nav-link text-active" href="#my-about">
+                  About
+                </a>
+                <a class="my-nav nav-link text-active" href="#my-resume">
+                  Resume
+                </a>
+                <a class="my-nav nav-link" href="#">Projects</a>
+                <a class="my-nav nav-link" href="#my-contact">Contact</a>
+                <a class="my-nav nav-link" href="#my-skill">Skill</a>
+                <!-- <a class="nav-link" href="#">Team</a> -->
+                <!-- <a class="nav-link" href="#">Contect</a> -->
+                <div
+                  class="nav-link text-center"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-custom-class="download-tooltip"
+                  data-bs-title="Sohan Maali"
+                >
+                  <img
+                    src="Images/my ori.jpg"
+                    class="rounded-circle"
+                    height="25"
+                    alt="Black and White Portrait of a Man"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ==============Nav-bar End================= -->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="h1 fw-bold">i'm <br />Sohan Maali</div>
+          <div>
+            i am a <strong> JAVA Full Stack Web developer </strong>with a
+            passion for creating visually stunning and user-friendly websites.
+          </div>
+
+          <!-- <div class="row mt-5"> -->
+          <div class="mt-5">
+            <button class="btn btn-primary w-25 rounded-pill" id="hire-me">
+              Hire Me
+            </button>
+
+            <a
+              href="resume sohan.pdf"
+              download="Sohan-resume"
+              class="btn rounded-pill"
+              id="download-cv"
+              target="_blank"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="download-tooltip"
+              data-bs-title="Click here to download my cv."
+            >
+              Download CV <i class="fa-solid fa-download"></i>
+            </a>
+          </div>
+          <div class="row mt-5 justify-content-center justify-content-sm-start">
+            <a
+              href="https://www.linkedin.com/in/sohan-maali-6b3795282/"
+              target="_blank"
+              class="col-1 col-sm-1 border icon d-flex justify-content-center me-5 align-items-center"
+              id="linkedin"
+              target="_blank"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="linkedin-tooltip"
+              data-bs-title="linkedin"
+            >
+              <span class="">
+                <i class="fab fa-linkedin"> </i>
+              </span>
+            </a>
+            <a
+              href="https://github.com/Sohanmaali"
+              target="_blank"
+              class="col-1 col-sm-1 border icon d-flex justify-content-center me-5 align-items-center"
+              id="github"
+              target="_blank"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="github-tooltip"
+              data-bs-title="github"
+            >
+              <span class="">
+                <i class="fab fa-git"> </i>
+              </span>
+            </a>
+            <a
+              href="https://instagram.com/sohan_maali1"
+              target="_blank"
+              class="col-1 col-sm-1 border icon d-flex justify-content-center me-5 align-items-center"
+              id="instagram"
+              target="_blank"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="instagram-tooltip"
+              data-bs-title="instagram."
+            >
+              <span class="">
+                <i class="fab fa-instagram"> </i>
+              </span>
+            </a>
+            <a
+              href="https://twitter.com/sohan_maali7"
+              target="_blank"
+              class="col-1 col-sm-1 border icon d-flex justify-content-center me-5 align-items-center"
+              id="twitter"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="twitter-tooltip"
+              title="Twitter"
+            >
+              <span>
+                <i class="fab fa-twitter"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-5 mt-5 mt-sm-0">
+          <div class="justify-content-center text-center">
+            <!-- <div class="my-img w-75"> -->
+            <img
+              src="Images/my ori.jpg"
+              id="my-img"
+              class="img-fluid w-50 border rounded-circle my-img"
+              alt="Sohan-img"
+            />
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==========About Me============ -->
+    <section class="about-me" id="my-about">
+      <div class="container mt-5">
+        <div class="h2 text-center">
+          <h1 class="big big-2 fw-bold text-light">About Me</h1>
+        </div>
+        <div class="row mt-5 justify-content-between align-items-center">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body text-dark">
+                <h4 class="text-center">My introduction</h4>
+                <p class="card-text">
+                  I am looking for an entry-level position to kick start my
+                  career in the Java back end developer. I wish to work in a
+                  dynamic organisation that will contribute to my professional
+                  and personal growth while I contribute to the growth of the
+                  company as well as engage in opportunities to further the
+                  company's goals.....
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="div col-md-5 align-items-md-center">
+            <div
+              class="row justify-content-center fw-bold align-items-center mt-5 mt-md-0"
+            >
+              <div class="col-md-6 col-5 d-grid">Name :</div>
+              <div class="col-md-6 col-5 d-grid">Sohan Maali</div>
+            </div>
+            <div
+              class="row justify-content-center align-items-center text-white fw-bold"
+            >
+              <div class="col-md-6 col-5 d-grid g-4">Date of birth:</div>
+              <div class="col-md-6 col-5 d-grid g-4">08 - oct - 2002</div>
+            </div>
+            <div
+              class="row justify-content-center align-items-center text-white fw-bold"
+            >
+              <div class="col-md-6 col-5 d-grid g-4">Address:</div>
+              <div class="col-md-6 col-5 d-grid g-4">Khategaon Dewas Mp</div>
+            </div>
+            <div
+              class="row justify-content-center align-items-center text-white fw-bold"
+            >
+              <div class="col-md-6 col-5 d-grid g-4">Email:</div>
+              <div class="col-md-6 col-5 d-grid g-4">sohanmaali4@gmail.com</div>
+            </div>
+            <div
+              class="row justify-content-center align-items-center text-white fw-bold"
+            >
+              <div class="col-md-6 col-5 d-grid g-4">Mobile:</div>
+              <div class="col-md-6 col-5 d-grid g-4">+91 6232389832</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============About me End=========== -->
+    <!-- ============Resume End=========== -->
+    <section class="resume" id="my-resume">
+      <div class="container text-dark">
+        <div class="h2 text-center mt-5 text-white">
+          <h1 class="big big-2 fw-bold text-light">Resume</h1>
+        </div>
+        <div class="row mt-5">
+          <div class="col-sm-3 mt-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">2017-2018</h5>
+                <div class="card-text">
+                  <div>GAYATRI VIDYA MANDIR HIGHR SCHOOL - KHATEGAON</div>
+                  <div>JULY 2017 - JULY 2018</div>
+                  <div>
+                    Completed Higher School Certificate Examination MP Board in
+                    2018 with 75.8%.
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 mt-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">2019-2020</h5>
+                <div class="card-text">
+                  <div>GOVT. HIGH SECONDARY SCHOOL - KHATEGAON</div>
+                  <div>JULY 2019 - JULY 2020</div>
+                  <div>
+                    Completed Higher School Certificate Examination MP Board in
+                    2018 with 75.8%.
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 mt-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">2020-2023</h5>
+                <div class="card-text">
+                  <div>HARDA ADHRSH COLLEGE HARDA (MADHYA PRADESH) BCA</div>
+                  <div>JUNE 2020 - MARCH 2023</div>
+                  <div>
+                    Completed BCA from Harda Adarsh College, affiliated to
+                    Barkatullah University Bhopal Percentage 65.50%
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 mt-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">2017-2018</h5>
+                <div class="card-text">
+                  <div>PATEL COLLEGE OF SCIENCE & TECHNOLOGY - INDORE</div>
+                  <div>JULY 2023 -</div>
+                  <div>
+                    currently i'm pursuing mca from patel college of institute
+                    indore
+                    <div>&nbsp;</div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============Resume End=========== -->
+
+    <!-- ============Slill=========== -->
+    <div class="container text-black" id="my-skill">
+      <div class="h3 text-center mt-5 text-white">
+        Skills <br />My technical level
+      </div>
+      <div class="row mt-5">
+        <div class="col-sm-3 mt-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Frontend</h5>
+              <p class="card-text mt-3">
+                <span class="skill p-1">HTML</span>
+                <span class="skill p-1">CSS</span>
+                <span class="skill p-1">BOOTSTRAP</span>
+                <span class="skill p-1">JAVASCRIPT</span>
+              </p>
+              <a href="#" class="btn btn-primary">know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mt-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">BackEnd</h5>
+              <p class="card-text mt-3">
+                <span class="skill p-1">JAVA</span>
+
+                <span class="skill p-1">JAVA SCRIPT</span>
+              </p>
+              <a href="#" class="btn btn-primary">know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mt-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Data Base</h5>
+              <p class="card-text mt-3">
+                <span class="skill p-1">My SQL</span>
+                <span class="skill p-1">ORACLE</span>
+              </p>
+              <a href="#" class="btn btn-primary">know more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mt-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tool</h5>
+              <p class="card-text mt-3">
+                <span class="skill p-1">GITHUB</span>
+                <span class="skill p-1">GIT</span>
+              </p>
+              <a href="#" class="btn btn-primary">know more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============Slill End=========== -->
+    <!-- ============Contact=========== -->
+    <section id="my-contact">
+      <div class="container overflow-hidden">
+        <h2 class="text-center fw-bold mt-5">Contact Me</h2>
+        <div class="row gy-5 mt-3">
+          <div class="col-md-3">
+            <div class="p-md-3">
+              <div class="row justify-content-center text-center">
+                <div
+                  class="border contect-icon d-flex flex-column justify-content-center align-items-center fs-3"
+                >
+                  <i class="fa-solid fa-address-book"></i>
+                </div>
+                <div class="mt-2">ADDRESS</div>
+                <div class="mt-3">Mn. 64 Aamla Khategaon Dewas MP (455332)</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-md-3">
+              <div class="row justify-content-center text-center">
+                <div
+                  class="border contect-icon d-flex flex-column justify-content-center align-items-center fs-3"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="mt-2">CONTACT NUMBER</div>
+                <div class="mt-3">+91 6232389832</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-md-3">
+              <div class="row justify-content-center text-center">
+                <div
+                  class="border contect-icon d-flex flex-column justify-content-center align-items-center fs-3"
+                >
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="mt-2">EMAIL ADDRESS</div>
+                <div class="mt-3">sohanmaali4@gmail.com</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-md-3">
+              <div class="row justify-content-center text-center">
+                <div
+                  class="border contect-icon d-flex flex-column justify-content-center align-items-center fs-3"
+                >
+                  <i class="fa-solid fa-earth-americas"></i>
+                </div>
+                <div class="mt-2">WEBSIDE</div>
+                <div class="mt-3"><a href="#">sohan</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============Contact End=========== -->
+    <!-- ============form =========== -->
+    <section class="my-form">
+      <div>
+        <h1 class="bid big-2 text-center fw-bold">
+          Get in touch
+          <br />
+          Contact Me
+        </h1>
+      </div>
+      <div class="row pb-5">
+        <div class="col-md-5 justify-content-center text-center">
+          <img src="Images/sohan.jpg" class="img-fluid w-50" height="100px" alt="">
+        </div>
+        <div class="col-md-5">
+          <form action="">
+            <div class="form-floating mb-3 bg-transparent input-field">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Your Name"
+              />
+              <label for="floatingInput">Your Name</label>
+            </div>
+            <div class="form-floating mb-3 bg-transparent input-field">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3 bg-transparent input-field">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Your Name"
+              />
+              <label for="floatingInput">Subject</label>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea"
+              ></textarea>
+              <label for="floatingTextarea">Comments</label>
+            </div>
+            <div class="col-12 mt-4">
+              <button class="btn btn-warning rounded-pill w-25" type="submit">Send Message</button>
+            </div>
+          </form>
+          <!-- ========================== -->
+        </div>
+      </div>
+    </section>
+    <!-- ============form End=========== -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
