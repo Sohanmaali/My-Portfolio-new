@@ -74,6 +74,12 @@
   color: white;
   box-shadow: 0px 2px 25px 5px #0077b5;
 }
+#linkedin span {
+  transition: transform 0.5s ease-in-out;
+}
+#linkedin:hover span {
+  transform: rotate(360deg);
+}
 .linkedin-tooltip .tooltip-inner {
   background-color: #0077b5;
   color: #fff;
@@ -84,6 +90,15 @@
   box-shadow: 0px 2px 25px 5px #171515;
   color: white;
 }
+
+#github span {
+  transition: transform 0.5s ease-in-out;
+}
+
+#github:hover span {
+  transform: rotate(360deg);
+}
+
 .github-tooltip .tooltip-inner {
   background-color: #171515;
   color: #fff;
@@ -92,9 +107,16 @@
   background-color: #f56040;
   box-shadow: 0px 2px 25px 5px #f56040;
   /* insra */
-
   color: white;
 }
+
+#instagram span {
+  transition: transform 0.5s ease-in-out;
+}
+#instagram:hover span {
+  transform: rotate(360deg);
+}
+
 .instagram-tooltip .tooltip-inner {
   background-color: #f56040;
   color: #fff;
@@ -103,9 +125,15 @@
   background-color: #1da1f2;
   box-shadow: 0px 2px 25px 5px #1da1f2;
   /* twitter */
-
   color: white;
 }
+#twitter span {
+  transition: transform 0.5s ease-in-out;
+}
+#twitter:hover span {
+  transform: rotate(360deg);
+}
+
 .twitter-tooltip .tooltip-inner {
   background-color: #1da1f2;
   color: #fff;
@@ -114,6 +142,50 @@
   height: 35vh;
   box-shadow: 0px 2px 15px 5px #fff;
 }
+/* ================================== */
+#text {
+  border-right: 0.15em solid orange;
+  animation: blink 0.75s step-end infinite;
+  width: max-content;
+}
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+img.my-img {
+  /* -webkit-animation: mover 1s infinite alternate; */
+  animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+#download-arrow {
+  animation: movedown 1s infinite alternate;
+}
+@keyframes movedown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/* ================================== */
 /* ================SKILL============== */
 .skill {
   background-color: blueviolet;
@@ -135,26 +207,15 @@
 
 /* ============Form======== */
 
-/* .input-field input:focus ~ label,
-.input-field input:valid ~ label {
-  font-size: 0.8rem;
-  top: 10px;
-  transform: translateY(-120%);
-}
-.input-field textarea:focus ~ label,
-.input-field textarea:valid ~ label {
-  font-size: 0.8rem;
-  top: 10px;
-  transform: translateY(-120%);
-}
-*/
 .input-field input {
   background-color: transparent;
   border-radius: 0;
   border: none;
   border-bottom: 2px solid white;
+  color: #fff;
 }
 .input-field input:focus {
+  box-shadow: none !important;
   background: transparent;
   color: white;
   border: none;
@@ -164,6 +225,7 @@
   box-shadow: none !important;
   border-color: #ced4da !important;
   border-radius: non;
+  color: #fff;
 }
 
 #floatingTextarea {
@@ -171,10 +233,43 @@
   border-radius: 0;
   border: none;
   border-bottom: 2px solid white;
+  color: #fff;
 }
 #floatingTextarea:focus {
   box-shadow: none !important;
   border-color: #ced4da !important;
   border-radius: 0%;
+  color: #fff;
 }
 /* ============Form======== */
+/* ============resume======== */
+.resume-card {
+  background-color: #1a1a1a;
+  color: #fff;
+  transition: transform 0.5s ease-in-out;
+}
+.resume-card:hover {
+  transform: scale(1.1);
+}
+hr {
+  color: white;
+}
+/* ============Resume======== */
+/* ============Skill======== */
+.skill-card {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+hr {
+  color: white;
+}
+/* ============Skill======== */
+/* ============About me======== */
+.about-card {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+hr {
+  color: white;
+}
+/* ============Skill======== */
