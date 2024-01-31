@@ -12,7 +12,7 @@ function userName() {
 }
 
 // ==========Text delete Animation============
-const txtFull = "Sohan Maali"; //the text goes here
+const txtFull = "Sohan Un"; //the text goes here
 const txtArr = txtFull.split("");
 
 function writeOut(txtArr, curChar = 0) {
