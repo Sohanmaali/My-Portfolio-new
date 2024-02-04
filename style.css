@@ -1,71 +1,194 @@
-.nav-link {
-  color: white;
-}
-.nav-link:hover {
-  color: yellow;
+:root {
+  /**
+      * colors
+      */
+  /* gradient */
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right,
+    hsl(240, 1%, 25%) 3%,
+    hsl(0, 0%, 19%) 97%
+  );
+  --bg-gradient-jet: linear-gradient(
+      to bottom right,
+      hsla(240, 1%, 18%, 0.251) 0%,
+      hsla(240, 2%, 11%, 0) 100%
+    ),
+    hsl(240, 2%, 13%);
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right,
+    hsl(45, 100%, 71%) 0%,
+    hsla(36, 100%, 69%, 0) 50%
+  );
+  --bg-gradient-yellow-2: linear-gradient(
+      135deg,
+      hsla(45, 100%, 71%, 0.251) 0%,
+      hsla(35, 100%, 68%, 0) 59.86%
+    ),
+    hsl(240, 2%, 13%);
+  --border-gradient-onyx: linear-gradient(
+    to bottom right,
+    hsl(0, 0%, 25%) 0%,
+    hsla(0, 0%, 25%, 0) 50%
+  );
+  --text-gradient-yellow: linear-gradient(
+    to right,
+    hsl(45, 100%, 72%),
+    hsl(35, 100%, 68%)
+  );
+  /* solid */
+  --jet: hsl(0, 0%, 22%);
+  --onyx: hsl(240, 1%, 17%);
+  --eerie-black-1: hsl(240, 2%, 13%);
+  --eerie-black-2: hsl(240, 2%, 12%);
+  --smoky-black: hsl(0, 0%, 7%);
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 98%);
+  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --vegas-gold: hsl(45, 54%, 58%);
+  --light-gray: hsl(0, 0%, 84%);
+  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  /**
+      * typography
+      */
+  /* font-family */
+  --ff-poppins: "Poppins", sans-serif;
+  /* font-size */
+  --fs-1: 24px;
+  --fs-2: 18px;
+  --fs-3: 17px;
+  --fs-4: 16px;
+  --fs-5: 15px;
+  --fs-6: 14px;
+  --fs-7: 13px;
+  --fs-8: 11px;
+  /* font-weight */
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  /**
+      * shadow
+      */
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+  /**
+      * transition
+      */
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease-in-out;
 }
 
-.my-nav {
-  text-decoration: none;
-  /* width: max-content; */
-  position: relative;
-}
-.my-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  height: 2px;
-  width: 100%;
-  left: 0;
-  background-color: rgb(0, 255, 115);
-  transition: 0.3s;
-  transition-timing-function: ease-in-out;
-  transform: scaleX(0);
-  /* color: yellow; */
-}
-.my-nav a:hover::after {
-  /* color: yellow; */
-  transform: scaleX(1);
-}
-.nav-img {
-  height: 4vh;
-  border-radius: 50%;
-}
-.navbar-toggler {
-  border-color: #4caf50;
+html {
+  scroll-behavior: smooth;
 }
 
-.navbar-toggler-icon {
-  background-color: #fff;
+#side .nav-link.active,
+#side .nav-link:hover,
+#side .nav-link:focus {
+  color: #111;
+  border-bottom: 1px #000 dashed;
 }
-/* <!-- ==============Nav-bar End================= --> */
-.icon {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+
+#left,
+#right {
+  border-radius: 20px;
+  background: var(--bg-gradient-onyx);
 }
-/* ==============Second Section================ */
-#hire-me {
-  background-color: #ff9500;
-  border: none;
+#side {
+  border-radius: 100px;
 }
-#hire-me:hover {
-  background-color: #ff7900;
-  color: black;
+.side-img img {
+  border-radius: 30px;
 }
-#download-cv {
-  background-color: #ffc107;
-  transition: background-color 0.3s ease;
+
+.avatar-box {
+  border-radius: 20px;
 }
-#download-cv:hover {
-  background-color: #000;
+
+.avatar-box img {
+  /* background: var(--bg-gradient-onyx); */
+  border-radius: 20px;
 }
-.download-tooltip .tooltip-inner {
-  background-color: #ffc107;
-  color: #000;
+.side-nav {
+  list-style: none;
 }
-/* =================Socil media Icon============ */
+.java-cv a {
+  color: var(--white-1);
+  background: var(--onyx);
+  font-size: var(--fs-9);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 3px 12px 5px;
+  border-radius: 8px;
+}
+.left-nav {
+  /* background: var(--bg-gradient-onyx); */
+  background-color: #333333;
+}
+.icon-box {
+  background: #202022;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--orange-yellow-crayola);
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px;
+  z-index: 1;
+}
+.con-div:hover {
+  .icon-box {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+      inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+      -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+      0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+      0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: scale(0.9);
+  }
+  cursor: pointer;
+}
+
+.icon-box:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* transform: translateY(0.5em); */
+}
+
+.icon-box i {
+  transition: transform 0.5s;
+}
+
+.icon-box:hover i {
+  /* transform: scale(0.9); */
+  fill: #333333;
+}
+
+.nav-tab-bar {
+  display: block;
+}
+/* .hr-one {
+  display: none;
+} */
+
+@media (min-width: 450px) {
+  .nav-tab-bar {
+    display: none;
+  }
+  /* .hr-one {
+    display: block;
+  } */
+}
+
 #linkedin:hover {
   background-color: #0077b5;
   color: white;
@@ -135,42 +258,25 @@
   background-color: #1da1f2;
   color: #fff;
 }
-.my-img {
-  height: 35vh;
-  box-shadow: 0px 2px 15px 5px #fff;
-}
-/* ================================== */
-#text {
-  border-right: 0.15em solid orange;
-  animation: blink 0.75s step-end infinite;
-  width: max-content;
-}
-@keyframes blink {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
 
-img.my-img {
-  /* -webkit-animation: mover 1s infinite alternate; */
-  animation: mover 1s infinite alternate;
+.icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
-
-@keyframes mover {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
+.download-cv {
+  background: #2b2b2c;
+  /* border: solid yellow; */
+}
+.download-cv:hover {
+  /* background-color: ; */
+  border: solid 1px yellow;
 }
 #download-arrow {
   animation: movedown 1s infinite alternate;
 }
+
 @keyframes movedown {
   0% {
     transform: translateY(0);
@@ -179,66 +285,36 @@ img.my-img {
     transform: translateY(-10px);
   }
 }
-/* =============== Second Section END =================== */
-/* ================SKILL============== */
-.skill {
-  background-color: blueviolet;
-  border-radius: 5px;
-  gap: 5px;
-  width: 20vw;
-}
-/* ============SKILL END======== */
-/* ============Contact Me================ */
-.contect-icon {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  color: #ffbd39;
-}
-.contect-icon:hover {
-  background-color: gray;
-  color: #FFF;
-}
-/* ============Contact Me END================ */
 
-/* ============Form======== */
-
-.input-field input {
-  background-color: transparent;
-  border-radius: 0;
-  border: none;
-  border-bottom: 2px solid white;
-  color: #fff;
+/* ================================== */
+.nav-link {
+  border: none !important;
+  color: white !important;
 }
-.input-field input:focus {
-  box-shadow: none !important;
-  background: transparent;
+.nav-link.active {
+  color: yellow !important;
+  background-color: transparent !important;
+}
+.nav-link:hover {
+  border: transparent none !important;
+  color: #d4d4d4 !important;
+}
+
+/* ============About Me======== */
+.about-card {
+  background-color: #202022;
+  /* color: #fff; */
+  /* transition: transform 0.5s ease-in-out; */
+}
+.about-card:hover {
+  /* transform: scale(1.1); */
+  box-shadow: 0px 0px 20px 1px #ffbb763f;
+  border: 1px solid rgba(255, 255, 255, 0.454);
+}
+hr {
   color: white;
-  border: none;
-  border-bottom: 2px solid white;
 }
-#floatingInput:focus {
-  box-shadow: none !important;
-  border-color: #ced4da !important;
-  border-radius: non;
-  color: #fff;
-}
-
-#floatingTextarea {
-  background-color: transparent;
-  border-radius: 0;
-  border: none;
-  border-bottom: 2px solid white;
-  color: #fff;
-}
-#floatingTextarea:focus {
-  box-shadow: none !important;
-  border-color: #ced4da !important;
-  border-radius: 0%;
-  color: #fff;
-}
-/* ============Form======== */
+/* ============About Me End======== */
 /* ============resume======== */
 .resume-card {
   background-color: #1a1a1a;
@@ -252,21 +328,3 @@ hr {
   color: white;
 }
 /* ============Resume======== */
-/* ============Skill======== */
-.skill-card {
-  background-color: #1a1a1a;
-  color: #fff;
-}
-hr {
-  color: white;
-}
-/* ============Skill======== */
-/* ============About me======== */
-.about-card {
-  background-color: #1a1a1a;
-  color: #fff;
-}
-hr {
-  color: white;
-}
-/* ============Skill======== */

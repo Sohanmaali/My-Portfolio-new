@@ -1,0 +1,272 @@
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: yellow;
+}
+
+.my-nav {
+  text-decoration: none;
+  /* width: max-content; */
+  position: relative;
+}
+.my-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: rgb(0, 255, 115);
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+  /* color: yellow; */
+}
+.my-nav a:hover::after {
+  /* color: yellow; */
+  transform: scaleX(1);
+}
+.nav-img {
+  height: 4vh;
+  border-radius: 50%;
+}
+.navbar-toggler {
+  border-color: #4caf50;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+/* <!-- ==============Nav-bar End================= --> */
+.icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+/* ==============Second Section================ */
+#hire-me {
+  background-color: #ff9500;
+  border: none;
+}
+#hire-me:hover {
+  background-color: #ff7900;
+  color: black;
+}
+#download-cv {
+  background-color: #ffc107;
+  transition: background-color 0.3s ease;
+}
+#download-cv:hover {
+  background-color: #000;
+}
+.download-tooltip .tooltip-inner {
+  background-color: #ffc107;
+  color: #000;
+}
+/* =================Socil media Icon============ */
+#linkedin:hover {
+  background-color: #0077b5;
+  color: white;
+  box-shadow: 0px 2px 25px 5px #0077b5;
+}
+#linkedin span {
+  transition: transform 0.5s ease-in-out;
+}
+#linkedin:hover span {
+  transform: rotate(360deg);
+}
+.linkedin-tooltip .tooltip-inner {
+  background-color: #0077b5;
+  color: #fff;
+}
+#github:hover {
+  background-color: #171515;
+  /* git */
+  box-shadow: 0px 2px 25px 5px #171515;
+  color: white;
+}
+
+#github span {
+  transition: transform 0.5s ease-in-out;
+}
+
+#github:hover span {
+  transform: rotate(360deg);
+}
+
+.github-tooltip .tooltip-inner {
+  background-color: #171515;
+  color: #fff;
+}
+#instagram:hover {
+  background-color: #f56040;
+  box-shadow: 0px 2px 25px 5px #f56040;
+  /* insra */
+  color: white;
+}
+
+#instagram span {
+  transition: transform 0.5s ease-in-out;
+}
+#instagram:hover span {
+  transform: rotate(360deg);
+}
+
+.instagram-tooltip .tooltip-inner {
+  background-color: #f56040;
+  color: #fff;
+}
+#twitter:hover {
+  background-color: #1da1f2;
+  box-shadow: 0px 2px 25px 5px #1da1f2;
+  /* twitter */
+  color: white;
+}
+#twitter span {
+  transition: transform 0.5s ease-in-out;
+}
+#twitter:hover span {
+  transform: rotate(360deg);
+}
+
+.twitter-tooltip .tooltip-inner {
+  background-color: #1da1f2;
+  color: #fff;
+}
+.my-img {
+  height: 35vh;
+  box-shadow: 0px 2px 15px 5px #fff;
+}
+/* ================================== */
+#text {
+  border-right: 0.15em solid orange;
+  animation: blink 0.75s step-end infinite;
+  width: max-content;
+}
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+img.my-img {
+  /* -webkit-animation: mover 1s infinite alternate; */
+  animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+#download-arrow {
+  animation: movedown 1s infinite alternate;
+}
+@keyframes movedown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+/* =============== Second Section END =================== */
+/* ================SKILL============== */
+.skill {
+  background-color: blueviolet;
+  border-radius: 5px;
+  gap: 5px;
+  width: 20vw;
+}
+/* ============SKILL END======== */
+/* ============Contact Me================ */
+.contect-icon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  color: #ffbd39;
+}
+.contect-icon:hover {
+  background-color: gray;
+  color: #FFF;
+}
+/* ============Contact Me END================ */
+
+/* ============Form======== */
+
+.input-field input {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid white;
+  color: #fff;
+}
+.input-field input:focus {
+  box-shadow: none !important;
+  background: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+}
+#floatingInput:focus {
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  border-radius: non;
+  color: #fff;
+}
+
+#floatingTextarea {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid white;
+  color: #fff;
+}
+#floatingTextarea:focus {
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  border-radius: 0%;
+  color: #fff;
+}
+/* ============Form======== */
+/* ============resume======== */
+.resume-card {
+  background-color: #1a1a1a;
+  color: #fff;
+  transition: transform 0.5s ease-in-out;
+}
+.resume-card:hover {
+  transform: scale(1.1);
+}
+hr {
+  color: white;
+}
+/* ============Resume======== */
+/* ============Skill======== */
+.skill-card {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+hr {
+  color: white;
+}
+/* ============Skill======== */
+/* ============About me======== */
+.about-card {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+hr {
+  color: white;
+}
+/* ============Skill======== */

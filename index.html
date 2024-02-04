@@ -16,521 +16,716 @@
       crossorigin="anonymous"
     ></script>
     <!-- =====================ONLINE CDN LINK===================== -->
-    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css" />
     <script src="bootstrap-5.2.3-dist/js/bootstrap.js"></script>
-    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script> -->
     <!-- <script src="bootstrap-5.2.3-dist/js/"></script> -->
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style2.css" /> -->
     <!-- ============Font=========== -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <title>Sohan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-black text-white">
-    <!-- ==============Nav-bar================= -->
-
-    <header class="bg-black">
-      <nav class="navbar navbar-expand-lg bg-transparent">
-        <div class="container">
-          <a class="navbar-brand h1 fw-bold fs-1 text-light" href="index.html">
-            SOHAN
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon tgl-btn"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNavAltMarkup"
-          >
-            <div class="row col-md-6">
+  <body class="bg-dark">
+    <div class="container">
+      <div class="container position-relative" id="content">
+        <div class="row h-100 mt-3 mt-md-5 gx-5">
+          <aside class="col-md-3 me-4" id="left">
+            <div class="mt-5 mb-3 sticky-top" id="side">
               <div
-                class="navbar-nav justify-content-between align-items-center fs-5 my-nav"
+                class="container sidebar-info text-md-center d-md-block d-flex"
               >
-                <a class="my-nav nav-link text-active" href="#my-about">
-                  About
-                </a>
-                <a class="my-nav nav-link text-active" href="#my-resume">
-                  Resume
-                </a>
-                <a class="my-nav nav-link" href="#my-project">Projects</a>
-                <a class="my-nav nav-link" href="#my-contact">Contact</a>
-                <a class="my-nav nav-link" href="#my-skill">Skill</a>
-                <!-- <a class="nav-link" href="#">Team</a> -->
-                <!-- <a class="nav-link" href="#">Contect</a> -->
-                <div
-                  class="nav-link text-center"
+                <div class="row">
+                  <div
+                    class="col-md-12 col-3 avatar-box text-left text-md-center"
+                  >
+                    <img
+                      src="Images/my ori.jpg"
+                      alt="Sohan maali"
+                      class="img-fluid text-left"
+                      width="200px"
+                    />
+                  </div>
+                  <div class="col-md-12 col-9 pt-3">
+                    <div class="h2 fw-bold text-light">Sohan Maali</div>
+                    <div class="title">
+                      <div style="text-decoration: none; color: aliceblue">
+                        Java Full Stack Web Devloper
+                      </div>
+                      <div
+                        class="title pt-md-3 pt-4 justify-content-between row"
+                      >
+                        <div class="col-9 col-md-12 my-cv">
+                          <a
+                            href="resume sohan.pdf"
+                            style="text-decoration: none; color: aliceblue"
+                            class="btn download-cv pr-5"
+                            target="_blank"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            data-bs-custom-class="download-tooltip"
+                            data-bs-title="Click here to download my cv."
+                          >
+                            <span>Download</span> &nbsp;
+                            <i class="fa-solid fa-cloud-arrow-down"></i>
+                          </a>
+                        </div>
+                        <div class="col-2">
+                          <button
+                            class="navbar-toggler text-light me-5 border-warning"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup"
+                            aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                          >
+                            <span class="nav-tab-bar text-warning">
+                              <i
+                                id="download-arrow"
+                                class="fa-solid fa-angles-down"
+                              >
+                              </i>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ---------------------------------------------- -->
+              <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                  <!-- <hr class="text-light hr-one" /> -->
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="">
+                      <div class="nav-link g-0">
+                        <div class="row pt-3 con-div">
+                          <div class="col-3 col-md-3 text-center pt-2">
+                            <div class="icon-box">
+                              <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-9 col-9 text-light pt-2">
+                            <div>Email</div>
+                            <div>sohanmaali4@gmail.com</div>
+                          </div>
+                        </div>
+                        <div class="row pt-3 con-div">
+                          <div class="col-3 col-md-3 text-center pt-2">
+                            <div class="icon-box">
+                              <ion-icon
+                                name="phone-portrait-outline"
+                              ></ion-icon>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-9 col-9 text-light pt-2">
+                            <div>Phone</div>
+                            <div>+91 6232389832</div>
+                          </div>
+                        </div>
+                        <div class="row pt-3 con-div">
+                          <div class="col-3 col-md-3 text-center pt-2">
+                            <div class="icon-box">
+                              <ion-icon name="calendar-outline"></ion-icon>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-9 col-9 text-light pt-2">
+                            <div>BIRTHDAY</div>
+                            <div>08-Oct-2002</div>
+                          </div>
+                        </div>
+                        <div class="row pt-3 con-div">
+                          <div class="col-3 col-md-3 text-center pt-2">
+                            <div class="icon-box">
+                              <ion-icon name="location-outline"></ion-icon>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-9 col-9 text-light pt-2">
+                            <div>LOCATION</div>
+                            <div>Aamla Khategaon Dewas M.P</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+              <hr class="text-light" />
+              <!-- /* =================Socil media Icon============ */ -->
+              <div class="row mt-3 justify-content-center">
+                <a
+                  href="https://www.linkedin.com/in/sohan-maali-6b3795282/"
+                  target="_blank"
+                  class="col-1 col-sm-1 border icon d-flex justify-content-center me-3 align-items-center"
+                  id="linkedin"
+                  target="_blank"
                   data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                  data-bs-custom-class="download-tooltip"
-                  data-bs-title="Sohan Maali"
+                  data-bs-placement="top"
+                  data-bs-custom-class="linkedin-tooltip"
+                  data-bs-title="linkedin"
                 >
-                  <img
-                    src="Images/my ori.jpg"
-                    class="rounded-circle"
-                    height="25"
-                    alt="Black and White Portrait of a Man"
-                    loading="lazy"
+                  <span class="">
+                    <i class="fab fa-linkedin"> </i>
+                  </span>
+                </a>
+                <a
+                  href="https://github.com/Sohanmaali"
+                  target="_blank"
+                  class="col-1 col-sm-1 border icon d-flex justify-content-center me-3 align-items-center"
+                  id="github"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="github-tooltip"
+                  data-bs-title="github"
+                >
+                  <span class="">
+                    <i class="fab fa-git"> </i>
+                  </span>
+                </a>
+                <a
+                  href="https://instagram.com/sohan_maali1"
+                  target="_blank"
+                  class="col-1 col-sm-1 border icon d-flex justify-content-center me-3 align-items-center"
+                  id="instagram"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="instagram-tooltip"
+                  data-bs-title="instagram."
+                >
+                  <span class="">
+                    <i class="fab fa-instagram"> </i>
+                  </span>
+                </a>
+              </div>
+              <!-- ================Socil media Icon End =================== -->
+              <!-- ================================================ -->
+            </div>
+          </aside>
+          <main class="col pl-5 mt-3 mt-sm-0" id="right">
+            <nav class="">
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link active fw-bold"
+                  id="nav-about-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-about"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-about"
+                  aria-selected="true"
+                >
+                  About
+                </button>
+                <button
+                  class="nav-link fw-bold"
+                  id="nav-Resume-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-Resume"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-Resume"
+                  aria-selected="false"
+                >
+                  Resume
+                </button>
+                <button
+                  class="nav-link fw-bold"
+                  id="nav-Projects-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-Projects"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-Projects"
+                  aria-selected="false"
+                >
+                  Projects
+                </button>
+                <button
+                  class="nav-link fw-bold"
+                  id="nav-Skill-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-Skill"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-Skill"
+                  aria-selected="false"
+                >
+                  Skill
+                </button>
+                <button
+                  class="nav-link fw-bold"
+                  id="nav-Contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-Contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-Contact"
+                  aria-selected="false"
+                >
+                  Contact
+                </button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="nav-about"
+                role="tabpanel"
+                aria-labelledby="nav-about-tab"
+                tabindex="0"
+              >
+                <!-- ===================About Me Start ================= -->
+
+                <div class="tab-content py-3 position-relative">
+                  <div
+                    class="tab-pane active position-relative text-light"
+                    id="tab1"
+                    role="tabpanel"
+                  >
+                    <h2 class="mb-3 border-bottom-5 fw-bold">About</h2>
+                    <p>
+                      Hey there, I'm Sohan Un, a student at patel colloge Indore
+                      Foundation in Indore. Currently, I'm diving into the world
+                      of web development and print media. I find immense joy in
+                      transforming intricate problems into designs that are not
+                      just simple, but beautiful and intuitive.
+                    </p>
+                    <hr />
+                    <p>
+                      As a dedicated learner, I'm actively honing my programming
+                      skills, eager to absorb the latest technologies and
+                      industry best practices. Beyond the classroom, I am on the
+                      lookout for opportunities that align with my enthusiasm
+                      for coding and design.
+                    </p>
+                    <hr />
+                    <p>
+                      I am looking for an entry-level position to kick start my
+                      career in the Java back end developer. I wish to work in a
+                      dynamic organization that will contribute to my
+                      professional and personal growth while I contribute to the
+                      growth of the company as well as engage in opportunities
+                      to further the company's goals .....!
+                    </p>
+                    <hr />
+                    <h2 class="fw-bold">I'm working on these</h2>
+                    <section class="about" id="my-about">
+                      <div class="container">
+                        <div class="row mt-2">
+                          <div class="col-sm-6 mt-3">
+                            <div class="card about-card">
+                              <div
+                                class="card-body text-center text-md-start text-light"
+                              >
+                                <h5 class="card-title">
+                                  <img
+                                    src="assets/images/icon-design.svg"
+                                    alt="icon-design"
+                                  />
+                                  <span
+                                    class="h4 fw-bold d-flex d-md-inline pt-2"
+                                    >&nbsp; Learning Web Design</span
+                                  >
+                                </h5>
+                                <div class="card-text">
+                                  <div>
+                                    GAYATRI VIDYA MANDIR HIGHR SCHOOL -
+                                    KHATEGAON
+                                  </div>
+                                  <div>JULY 2017 - JULY 2018</div>
+                                  <div>
+                                    Completed Higher School Certificate
+                                    Examination MP Board in 2018 with 75.8%.
+                                  </div>
+                                </div>
+                                <hr />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 mt-3">
+                            <div class="card about-card text-light">
+                              <div class="card-body">
+                                <h5 class="card-title">12<sup>th</sup></h5>
+                                <div class="card-text">
+                                  <div>
+                                    GOVT. HIGH SECONDARY SCHOOL - KHATEGAON
+                                  </div>
+                                  <div>JULY 2019 - JULY 2020</div>
+                                  <div>
+                                    Completed Higher School Certificate
+                                    Examination MP Board in 2018 with 75.8%.
+                                  </div>
+                                </div>
+                                <hr />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-2">
+                          <div class="col-sm-6 mt-3">
+                            <div class="card about-card text-light">
+                              <div class="card-body">
+                                <h5 class="card-title">10<sup>th</sup></h5>
+                                <div class="card-text">
+                                  <div>
+                                    GAYATRI VIDYA MANDIR HIGHR SCHOOL -
+                                    KHATEGAON
+                                  </div>
+                                  <div>JULY 2017 - JULY 2018</div>
+                                  <div>
+                                    Completed Higher School Certificate
+                                    Examination MP Board in 2018 with 75.8%.
+                                  </div>
+                                </div>
+                                <hr />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 mt-3">
+                            <div class="card about-card text-light">
+                              <div class="card-body">
+                                <h5 class="card-title">12<sup>th</sup></h5>
+                                <div class="card-text">
+                                  <div>
+                                    GOVT. HIGH SECONDARY SCHOOL - KHATEGAON
+                                  </div>
+                                  <div>JULY 2019 - JULY 2020</div>
+                                  <div>
+                                    Completed Higher School Certificate
+                                    Examination MP Board in 2018 with 75.8%.
+                                  </div>
+                                </div>
+                                <hr />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <!-- ===================About Me End ================= -->
+              <div
+                class="tab-pane fade"
+                id="nav-Resume"
+                role="tabpanel"
+                aria-labelledby="nav-Resume-tab"
+                tabindex="0"
+              >
+                <div class="tab-content py-3 position-relative">
+                  <div
+                    class="tab-pane active position-relative text-light"
+                    id="tab1"
+                    role="tabpanel"
+                  >
+                    <section class="resume" id="my-resume">
+                      <div class="container text-dark">
+                        <div class="h2 text-start mt-2 text-white">
+                          <h2 class="mb-3 border-bottom-5 fw-bold">Resume</h2>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col-sm-6 mt-3">
+                            <div class="card resume-card">
+                              <div class="card-body">
+                                <h5 class="card-title">10<sup>th</sup></h5>
+                                <div class="card-text">
+                                  <div>
+                                    GAYATRI VIDYA MANDIR HIGHR SCHOOL -
+                                    KHATEGAON
+                                  </div>
+                                  <div>JULY 2017 - JULY 2018</div>
+                                  <div>
+                                    Completed Higher School Certificate
+                                    Examination MP Board in 2018 with 75.8%.
+                                  </div>
+                                </div>
+                                <hr />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 mt-3">
+                            <div class="card resume-card">
+                              <div class="card-body">
+                                <h5 class="card-title">12<sup>th</sup></h5>
+                                <div class="card-text">
+                                  <div>
+                                    GOVT. HIGH SECONDARY SCHOOL - KHATEGAON
+                                  </div>
+                                  <div>JULY 2019 - JULY 2020</div>
+                                  <div>
+                                    Completed Higher School Certificate
+                                    Examination MP Board in 2018 with 75.8%.
+                                  </div>
+                                </div>
+                                <hr />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 mt-3">
+                            <div class="card resume-card">
+                              <div class="card-body">
+                                <h5 class="card-title">UG</h5>
+                                <div class="card-text">
+                                  <div>
+                                    HARDA ADHRSH COLLEGE HARDA (MADHYA PRADESH)
+                                    BCA
+                                  </div>
+                                  <div>JUNE 2020 - MARCH 2023</div>
+                                  <div>
+                                    Completed BCA from Harda Adarsh College,
+                                    affiliated to Barkatullah University Bhopal
+                                    Percentage 65.50%
+                                  </div>
+                                </div>
+                                <hr />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 mt-3">
+                            <div class="card resume-card">
+                              <div class="card-body">
+                                <h5 class="card-title">PG</h5>
+                                <div class="card-text">
+                                  <div>
+                                    PATEL COLLEGE OF SCIENCE & TECHNOLOGY -
+                                    INDORE
+                                  </div>
+                                  <div>JULY 2023 -</div>
+                                  <div>
+                                    currently i'm pursuing mca from patel
+                                    college of institute indore
+                                    <div>&nbsp;</div>
+                                  </div>
+                                </div>
+                                <hr />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-Projects"
+                role="tabpanel"
+                aria-labelledby="nav-Projects-tab"
+                tabindex="0"
+              >
+                2222222222
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-Skill"
+                role="tabpanel"
+                aria-labelledby="nav-Skill-tab"
+                tabindex="0"
+              >
+                3333333333
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-Contact"
+                role="tabpanel"
+                aria-labelledby="nav-Contact"
+                tabindex="0"
+              >
+                444444444444
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <footer class="bg-inverse text-white py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 pl-0">
+              <ul class="nav flex-column">
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 pl-0">
+              <ul class="nav flex-column">
+                <li class="nav-item"><a href="#" class="nav-link">More</a></li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Support</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Legal</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 ml-auto text-right">
+              <small class="text-uppercase">Connect on social media</small>
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a href="#" class="nav-link pr-0"
+                    ><i class="fa fa-pinterest fa-lg"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link pr-0"
+                    ><i class="fa fa-twitter fa-lg"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link pr-0"
+                    ><i class="fa fa-instagram fa-lg"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link pr-0">
+                    <i class="fa fa-facebook fa-lg"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link pr-0"
+                    ><i class="fa fa-skype fa-lg"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 text-right small">@2017 Company Name</div>
+          </div>
+        </div>
+      </footer>
+
+      <div
+        id="modal1"
+        class="modal fade"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="myModalLabel">Hello.</h3>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                ×
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group row">
+                <label for="example-text-input" class="col-2 col-form-label"
+                  >Text</label
+                >
+                <div class="col-10">
+                  <input
+                    class="form-control"
+                    type="text"
+                    value="Mike McDonald"
+                    id="example-text-input"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="example-search-input" class="col-2 col-form-label"
+                  >Search</label
+                >
+                <div class="col-10">
+                  <input
+                    class="form-control"
+                    type="search"
+                    value="How to responsive design"
+                    id="example-search-input"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="example-email-input" class="col-2 col-form-label"
+                  >Email</label
+                >
+                <div class="col-10">
+                  <input
+                    class="form-control"
+                    type="email"
+                    value="email@example.com"
+                    id="example-email-input"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="example-url-input" class="col-2 col-form-label"
+                  >URL</label
+                >
+                <div class="col-10">
+                  <input
+                    class="form-control"
+                    type="url"
+                    value="http://codeply.com"
+                    id="example-url-input"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="example-tel-input" class="col-2 col-form-label"
+                  >Phone</label
+                >
+                <div class="col-10">
+                  <input
+                    class="form-control"
+                    type="tel"
+                    value="1-(202)-555-5555"
+                    id="example-tel-input"
                   />
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- ==============Nav-bar End================= -->
-
-    <div class="container mt-5">
-      <div class="row justify-content-center">
-        <div class="col-md-5">
-          <div class="fw-bold" id="my-text">
-            <h1>Hi 🫡</h1>
-            <h1 class="d-inline">I'm &nbsp;</h1>
-            <h1 class="d-inline" id="text"></h1>
-          </div>
-          <div>
-            i am a <strong> JAVA Full Stack Web developer </strong>with a
-            passion for creating visually stunning and user-friendly websites.
-          </div>
-          <div class="mt-5">
-            <button class="btn btn-primary w-25 rounded-pill" id="hire-me">
-              Hire Me
-            </button>
-
-            <a
-              href="resume sohan.pdf"
-              download="Sohan-resume"
-              class="btn rounded-pill"
-              id="download-cv"
-              target="_blank"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-custom-class="download-tooltip"
-              data-bs-title="Click here to download my cv."
-            >
-              Download CV
-
-              <i id="download-arrow" class="fa-solid fa-arrow-down"></i>
-            </a>
-          </div>
-          <div class="row mt-5 justify-content-center justify-content-sm-start">
-            <a
-              href="https://www.linkedin.com/in/sohan-maali-6b3795282/"
-              target="_blank"
-              class="col-1 col-sm-1 border icon d-flex justify-content-center me-5 align-items-center"
-              id="linkedin"
-              target="_blank"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-custom-class="linkedin-tooltip"
-              data-bs-title="linkedin"
-            >
-              <span class="">
-                <i class="fab fa-linkedin"> </i>
-              </span>
-            </a>
-            <a
-              href="https://github.com/Sohanmaali"
-              target="_blank"
-              class="col-1 col-sm-1 border icon d-flex justify-content-center me-5 align-items-center"
-              id="github"
-              target="_blank"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-custom-class="github-tooltip"
-              data-bs-title="github"
-            >
-              <span class="">
-                <i class="fab fa-git"> </i>
-              </span>
-            </a>
-            <a
-              href="https://instagram.com/sohan_maali1"
-              target="_blank"
-              class="col-1 col-sm-1 border icon d-flex justify-content-center me-5 align-items-center"
-              id="instagram"
-              target="_blank"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-custom-class="instagram-tooltip"
-              data-bs-title="instagram."
-            >
-              <span class="">
-                <i class="fab fa-instagram"> </i>
-              </span>
-            </a>
-            <a
-              href="https://twitter.com/sohan_maali7"
-              target="_blank"
-              class="col-1 col-sm-1 border icon d-flex justify-content-center me-5 align-items-center"
-              id="twitter"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-custom-class="twitter-tooltip"
-              title="Twitter"
-            >
-              <span>
-                <i class="fab fa-twitter"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-5 mt-5 mt-sm-0">
-          <div class="justify-content-center text-center">
-            <img
-              src="Images/my ori.jpg"
-              id="my-img"
-              class="img-fluid w-50 border rounded-circle my-img"
-              alt="Sohan-img"
-            />
+            <div class="modal-footer">
+              <button class="btn" data-dismiss="modal" aria-hidden="true">
+                Close
+              </button>
+              <button class="btn btn-primary">Save changes</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- ==========About Me============ -->
-    <section class="about-me" id="my-about">
-      <div class="container mt-5">
-        <div class="h2 text-center">
-          <h1 class="big big-2 fw-bold text-light">About Me</h1>
-        </div>
-        <div class="row mt-5 justify-content-between align-items-center">
-          <div class="col-sm-6 mt-3">
-            <div class="card about-card">
-              <div class="card-body">
-                <h4 class="card-title text-center">My introduction</h4>
-                <div class="card-text">
-                  I am looking for an entry-level position to kick start my
-                  career in the Java back end developer. I wish to work in a
-                  dynamic organisation that will contribute to my professional
-                  and personal growth while I contribute to the growth of the
-                  company as well as engage in opportunities to further the
-                  company's goals ..... !
-                </div>
-                <hr />
-              </div>
-            </div>
-          </div>
-          <div class="div col-md-5 align-items-md-center">
-            <div
-              class="row justify-content-center fw-bold align-items-center mt-5 mt-md-0"
-            >
-              <div class="col-md-6 col-5 d-grid">Name</div>
-              <div class="col-md-6 col-5 d-grid">Sohan Un</div>
-            </div>
-            <div
-              class="row justify-content-center align-items-center text-white fw-bold"
-            >
-              <div class="col-md-6 col-5 d-grid g-4">Date of Borth</div>
-              <div class="col-md-6 col-5 d-grid g-4">08 - oct - 2002</div>
-            </div>
-            <div
-              class="row justify-content-center align-items-center text-white fw-bold"
-            >
-              <div class="col-md-6 col-5 d-grid g-4">Address</div>
-              <div class="col-md-6 col-5 d-grid g-4">Khategaon Dewas Mp</div>
-            </div>
-            <div
-              class="row justify-content-center align-items-center text-white fw-bold"
-            >
-              <div class="col-md-6 col-5 d-grid g-4">Email</div>
-              <div class="col-md-6 col-5 d-grid g-4">sohanmaali4@gmail.com</div>
-            </div>
-            <div
-              class="row justify-content-center align-items-center text-white fw-bold"
-            >
-              <div class="col-md-6 col-5 d-grid g-4">Mobile</div>
-              <div class="col-md-6 col-5 d-grid g-4">+91 6232389832</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ============About me End=========== -->
-    <!-- ============Resume End=========== -->
-    <section class="resume" id="my-resume">
-      <div class="container text-dark">
-        <div class="h2 text-center mt-5 text-white">
-          <h1 class="big big-2 fw-bold text-light">Resume</h1>
-        </div>
-        <div class="row mt-5">
-          <div class="col-sm-3 mt-3">
-            <div class="card resume-card">
-              <div class="card-body">
-                <h5 class="card-title">10<sup>th</sup></h5>
-                <div class="card-text">
-                  <div>GAYATRI VIDYA MANDIR HIGHR SCHOOL - KHATEGAON</div>
-                  <div>JULY 2017 - JULY 2018</div>
-                  <div>
-                    Completed Higher School Certificate Examination MP Board in
-                    2018 with 75.8%.
-                  </div>
-                </div>
-                <hr />
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 mt-3">
-            <div class="card resume-card">
-              <div class="card-body">
-                <h5 class="card-title">12<sup>th</sup></h5>
-                <div class="card-text">
-                  <div>GOVT. HIGH SECONDARY SCHOOL - KHATEGAON</div>
-                  <div>JULY 2019 - JULY 2020</div>
-                  <div>
-                    Completed Higher School Certificate Examination MP Board in
-                    2018 with 75.8%.
-                  </div>
-                </div>
-                <hr />
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 mt-3">
-            <div class="card resume-card">
-              <div class="card-body">
-                <h5 class="card-title">UG</h5>
-                <div class="card-text">
-                  <div>HARDA ADHRSH COLLEGE HARDA (MADHYA PRADESH) BCA</div>
-                  <div>JUNE 2020 - MARCH 2023</div>
-                  <div>
-                    Completed BCA from Harda Adarsh College, affiliated to
-                    Barkatullah University Bhopal Percentage 65.50%
-                  </div>
-                </div>
-                <hr />
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 mt-3">
-            <div class="card resume-card">
-              <div class="card-body">
-                <h5 class="card-title">PG</h5>
-                <div class="card-text">
-                  <div>PATEL COLLEGE OF SCIENCE & TECHNOLOGY - INDORE</div>
-                  <div>JULY 2023 -</div>
-                  <div>
-                    currently i'm pursuing mca from patel college of institute
-                    indore
-                    <div>&nbsp;</div>
-                  </div>
-                </div>
-                <hr />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ============Resume End=========== -->
-    <!-- ============Slill=========== -->
-    <section>
-      <div class="container text-black" id="my-skill">
-        <div class="h3 text-center mt-5 text-white">
-          Skills <br />My technical level
-        </div>
-        <div class="row mt-5">
-          <div class="col-sm-3 mt-3">
-            <div class="card skill-card">
-              <div class="card-body">
-                <h5 class="card-title">Frontend</h5>
-                <p class="card-text mt-3">
-                  <span class="skill p-1">HTML</span>
-                  <span class="skill p-1">CSS</span>
-                  <span class="skill p-1">BOOTSTRAP</span>
-                  <span class="skill p-1">JAVASCRIPT</span>
-                </p>
-                <a href="#" class="btn btn-primary">know more</a>
-              </div>
-            </div>
-          </div>
+    <script src="/assets/bootstrap-5.2.3-dist/js/bootstrap.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-          <div class="col-sm-3 mt-3">
-            <div class="card skill-card">
-              <div class="card-body">
-                <h5 class="card-title">Back End</h5>
-                <p class="card-text mt-3">
-                  <span class="skill p-1">JAVA</span>
-                  <span class="skill p-1">NODE JS</span>
-                </p>
-                <a href="#" class="btn btn-primary">know more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 mt-3">
-            <div class="card skill-card">
-              <div class="card-body">
-                <h5 class="card-title">Data Base</h5>
-                <p class="card-text mt-3">
-                  <span class="skill p-1">My SQL</span>
-                  <span class="skill p-1">ORACLE</span>
-                </p>
-                <a href="#" class="btn btn-primary">know more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 mt-3">
-            <div class="card skill-card">
-              <div class="card-body">
-                <h5 class="card-title">Tool</h5>
-                <p class="card-text mt-3">
-                  <span class="skill p-1">GITHUB</span>
-                  <span class="skill p-1">GIT</span>
-                </p>
-                <a href="#" class="btn btn-primary">know more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ============Slill End=========== -->
-    <!-- ============Contact=========== -->
-    <section id="my-contact">
-      <div class="container overflow-hidden">
-        <h2 class="text-center fw-bold mt-5">Contact Me</h2>
-        <div class="row gy-5 mt-3">
-          <div class="col-md-3">
-            <div class="p-md-3">
-              <div class="row justify-content-center text-center">
-                <div
-                  class="border contect-icon d-flex flex-column justify-content-center align-items-center fs-3"
-                >
-                  <i class="fa-solid fa-address-book"></i>
-                </div>
-                <div class="mt-2">ADDRESS</div>
-                <div class="mt-3">Mn. 64 Aamla Khategaon Dewas MP (455332)</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="p-md-3">
-              <div class="row justify-content-center text-center">
-                <div
-                  class="border contect-icon d-flex flex-column justify-content-center align-items-center fs-3"
-                >
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                <div class="mt-2">CONTACT NUMBER</div>
-                <div class="mt-3">+91 6232389832</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="p-md-3">
-              <div class="row justify-content-center text-center">
-                <div
-                  class="border contect-icon d-flex flex-column justify-content-center align-items-center fs-3"
-                >
-                  <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div class="mt-2">EMAIL ADDRESS</div>
-                <div class="mt-3">sohanmaali4@gmail.com</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="p-md-3">
-              <div class="row justify-content-center text-center">
-                <div
-                  class="border contect-icon d-flex flex-column justify-content-center align-items-center fs-3"
-                >
-                  <i class="fa-solid fa-earth-americas"></i>
-                </div>
-                <div class="mt-2">WEBSIDE</div>
-                <div class="mt-3"><a href="#">sohan</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ============Contact End=========== -->
-    <!-- ============form =========== -->
-    <section class="my-form mt-5">
-      <div class="container">
-        <div>
-          <h1 class="bid big-2 text-center fw-bold">
-            Get in touch
-            <br />
-            Contact Me
-          </h1>
-        </div>
-        <div class="row pb-5">
-          <div
-            class="col-md-5 justify-content-center text-center d-none d-md-block"
-          >
-            <img
-              src="Images/IMG_20231113_194827.jpg"
-              class="img-fluid w-50 border rounded rounded-pill"
-              height="100px"
-              alt=""
-            />
-          </div>
-          <div class="col-md-5 align-items-center mt-md-5">
-            <form action="" onsubmit="return checkValidation()">
-              <div class="form-floating mb-3 bg-transparent input-field">
-                <input
-                  type="text"
-                  class="form-control floatingInput"
-                  placeholder="Your Name"
-                  id="userName"
-                  value=""
-                  required
-                  onfocus="userName()"
-                />
-                <label for="floatingInput">Your Name</label>
-              </div>
-              <div class="form-floating mb-3 bg-transparent input-field">
-                <input
-                  type="email"
-                  class="form-control floatingInput"
-                  placeholder="name@example.com"
-                  required
-                />
-                <label for="floatingInput">Email address</label>
-              </div>
-              <div class="form-floating mb-3 bg-transparent input-field">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="Your Name"
-                  required
-                />
-                <label for="floatingInput">Subject</label>
-              </div>
-              <div class="form-floating">
-                <textarea
-                  class="form-control"
-                  placeholder="Leave a comment here"
-                  id="floatingTextarea"
-                  required
-                ></textarea>
-                <label for="floatingTextarea">Comments</label>
-              </div>
-              <div class="col-12 mt-4 text-md-start text-center">
-                <button class="btn btn-warning rounded-pill w-50" type="submit">
-                  Send Message
-                </button>
-              </div>
-            </form>
-            <!-- ========================== -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ============form End=========== -->
-
-    <script src="script.js"></script>
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
