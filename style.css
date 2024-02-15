@@ -96,7 +96,8 @@ html {
 #left,
 #right {
   border-radius: 20px;
-  background: var(--bg-gradient-onyx);
+  /* background: var(--bg-gradient-onyx); */
+  background: #1e1e1f;
 }
 #side {
   border-radius: 100px;
@@ -302,22 +303,44 @@ html {
 
 /* ============About Me======== */
 .about-card {
-  background-color: #202022;
-  /* color: #fff; */
-  /* transition: transform 0.5s ease-in-out; */
+  background-color: #222224;
+  transition: transform 0.5s ease-in-out;
 }
 .about-card:hover {
-  /* transform: scale(1.1); */
+  transform: scale(0.9);
   box-shadow: 0px 0px 20px 1px #ffbb763f;
-  border: 1px solid rgba(255, 255, 255, 0.454);
 }
-hr {
-  color: white;
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card img {
+  fill: #000;
+  /* width: 500px; */
+}
+.card:hover img {
+  scale: 0;
+}
+
+.card__description {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
 }
 /* ============About Me End======== */
 /* ============resume======== */
 .resume-card {
-  background-color: #1a1a1a;
+  background-color: #222224;
   color: #fff;
   transition: transform 0.5s ease-in-out;
 }
@@ -328,3 +351,110 @@ hr {
   color: white;
 }
 /* ============Resume======== */
+/* ============Skill======== */
+.skills-title {
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  padding: 20px;
+  background-color: #222224;
+}
+
+.skills-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.skill .title-wrapper data {
+  color: var(--light-gray);
+  /* color: #383838; */
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+}
+
+.skill-progress-bg {
+  background: var(--jet);
+  height: 8px;
+  border-radius: 10px;
+}
+
+.skill-progress-fill {
+  background: var(--text-gradient-yellow);
+  height: 100%;
+  border-radius: inherit;
+}
+/* ============Skill End======== */
+
+/* ------------------------ */
+.article-title {
+  margin-bottom: 30px;
+}
+
+/**
+ * education and experience 
+ */
+
+.timeline {
+  margin-bottom: 30px;
+}
+
+.timeline .title-wrapper {
+  /* display: flex; */
+  /* align-items: center; */
+  /* gap: 15px; */
+  /* margin-bottom: 25px; */
+}
+
+.timeline-list {
+  font-size: var(--fs-6);
+  margin-left: 45px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item:not(:last-child) {
+  /* margin-bottom: 20px; */
+}
+
+.timeline-item-title {
+  font-size: var(--fs-6);
+  line-height: 1.3;
+  /* margin-bottom: 7px; */
+}
+
+.timeline-list span {
+  color: var(--vegas-gold);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background: var(--jet);
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: var(--text-gradient-yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--jet);
+}
+
+.timeline-text {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+/* ------------------------ */

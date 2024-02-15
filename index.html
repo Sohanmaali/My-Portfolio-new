@@ -15,7 +15,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <!-- =====================ONLINE CDN LINK===================== -->
+    <!-- =====================OFFLINE CDN LINK===================== -->
     <!-- <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css" />
     <script src="bootstrap-5.2.3-dist/js/bootstrap.js"></script>
     <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script> -->
@@ -75,7 +75,7 @@
                             data-bs-custom-class="download-tooltip"
                             data-bs-title="Click here to download my cv."
                           >
-                            <span>Download</span> &nbsp;
+                            <span>Download </span> &nbsp;
                             <i class="fa-solid fa-cloud-arrow-down"></i>
                           </a>
                         </div>
@@ -211,12 +211,17 @@
                 </a>
               </div>
               <!-- ================Socil media Icon End =================== -->
-              <!-- ================================================ -->
             </div>
           </aside>
-          <main class="col pl-5 mt-3 mt-sm-0" id="right">
+          <!-- =====================Main Section========================= -->
+
+          <main class="col pl-5 mt-3 mt-sm-0 pt-2" id="right">
             <nav class="">
-              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <div
+                class="nav nav-tabs justify-content-md-end"
+                id="nav-tab"
+                role="tablist"
+              >
                 <button
                   class="nav-link active fw-bold"
                   id="nav-about-tab"
@@ -243,6 +248,18 @@
                 </button>
                 <button
                   class="nav-link fw-bold"
+                  id="nav-Skill-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-Skill"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-Skill"
+                  aria-selected="false"
+                >
+                  Skill
+                </button>
+                <button
+                  class="nav-link fw-bold"
                   id="nav-Projects-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#nav-Projects"
@@ -255,15 +272,15 @@
                 </button>
                 <button
                   class="nav-link fw-bold"
-                  id="nav-Skill-tab"
+                  id="nav-Gallary-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#nav-Skill"
+                  data-bs-target="#nav-Gallary"
                   type="button"
                   role="tab"
-                  aria-controls="nav-Skill"
+                  aria-controls="nav-Gallary"
                   aria-selected="false"
                 >
-                  Skill
+                  Gallary
                 </button>
                 <button
                   class="nav-link fw-bold"
@@ -280,6 +297,7 @@
               </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
+              <!-- ===================About Me Start ================= -->
               <div
                 class="tab-pane fade show active"
                 id="nav-about"
@@ -287,8 +305,6 @@
                 aria-labelledby="nav-about-tab"
                 tabindex="0"
               >
-                <!-- ===================About Me Start ================= -->
-
                 <div class="tab-content py-3 position-relative">
                   <div
                     class="tab-pane active position-relative text-light"
@@ -297,11 +313,12 @@
                   >
                     <h2 class="mb-3 border-bottom-5 fw-bold">About</h2>
                     <p>
-                      Hey there, I'm Sohan Un, a student at patel colloge Indore
-                      Foundation in Indore. Currently, I'm diving into the world
-                      of web development and print media. I find immense joy in
-                      transforming intricate problems into designs that are not
-                      just simple, but beautiful and intuitive.
+                      Hey there, I'm Sohan Maali, a student at patel colloge
+                      Indore Foundation in Indore. Currently, I'm diving into
+                      the world of web development and print media. I find
+                      immense joy in transforming intricate problems into
+                      designs that are not just simple, but beautiful and
+                      intuitive.
                     </p>
                     <hr />
                     <p>
@@ -326,89 +343,108 @@
                       <div class="container">
                         <div class="row mt-2">
                           <div class="col-sm-6 mt-3">
-                            <div class="card about-card">
-                              <div
-                                class="card-body text-center text-md-start text-light"
-                              >
-                                <h5 class="card-title">
-                                  <img
-                                    src="assets/images/icon-design.svg"
-                                    alt="icon-design"
-                                  />
-                                  <span
-                                    class="h4 fw-bold d-flex d-md-inline pt-2"
-                                    >&nbsp; Learning Web Design</span
-                                  >
-                                </h5>
-                                <div class="card-text">
-                                  <div>
-                                    GAYATRI VIDYA MANDIR HIGHR SCHOOL -
-                                    KHATEGAON
-                                  </div>
-                                  <div>JULY 2017 - JULY 2018</div>
-                                  <div>
-                                    Completed Higher School Certificate
-                                    Examination MP Board in 2018 with 75.8%.
+                            <div class="card about-card overflow-hidden">
+                              <div class="card-body text-center text-light">
+                                <img
+                                  src="assets/images/web-first.png"
+                                  class="img-fluid"
+                                  alt="Web img"
+                                />
+                                <div class="card__content p-md-5">
+                                  <h5 class="card-title fw-bold pt-3 pt-md-0">
+                                    Wev Development
+                                  </h5>
+                                  <div class="card__description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco.
                                   </div>
                                 </div>
-                                <hr />
                               </div>
                             </div>
                           </div>
                           <div class="col-sm-6 mt-3">
-                            <div class="card about-card text-light">
-                              <div class="card-body">
-                                <h5 class="card-title">12<sup>th</sup></h5>
-                                <div class="card-text">
-                                  <div>
-                                    GOVT. HIGH SECONDARY SCHOOL - KHATEGAON
-                                  </div>
-                                  <div>JULY 2019 - JULY 2020</div>
-                                  <div>
-                                    Completed Higher School Certificate
-                                    Examination MP Board in 2018 with 75.8%.
+                            <div
+                              class="card about-card text-light overflow-hidden"
+                            >
+                              <div
+                                class="card-body text-center text-md-start text-light"
+                              >
+                                <img
+                                  src="assets/images/web-first.png"
+                                  class="img-fluid w-100"
+                                  alt=""
+                                />
+                                <div class="card__content p-md-5">
+                                  <h5 class="card-title fw-bold pt-3 pt-md-0">
+                                    Wev Development
+                                  </h5>
+                                  <div class="card__description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco.
                                   </div>
                                 </div>
-                                <hr />
                               </div>
                             </div>
                           </div>
                         </div>
                         <div class="row mt-2">
                           <div class="col-sm-6 mt-3">
-                            <div class="card about-card text-light">
-                              <div class="card-body">
-                                <h5 class="card-title">10<sup>th</sup></h5>
-                                <div class="card-text">
-                                  <div>
-                                    GAYATRI VIDYA MANDIR HIGHR SCHOOL -
-                                    KHATEGAON
-                                  </div>
-                                  <div>JULY 2017 - JULY 2018</div>
-                                  <div>
-                                    Completed Higher School Certificate
-                                    Examination MP Board in 2018 with 75.8%.
+                            <div
+                              class="card about-card text-light overflow-hidden"
+                            >
+                              <div
+                                class="card-body text-center text-md-start text-light"
+                              >
+                                <img
+                                  src="assets/images/web-first.png"
+                                  class="img-fluid w-100"
+                                  alt=""
+                                />
+                                <div class="card__content p-md-5">
+                                  <h5 class="card-title fw-bold pt-3 pt-md-0">
+                                    Wev Development
+                                  </h5>
+                                  <div class="card__description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco.
                                   </div>
                                 </div>
-                                <hr />
                               </div>
                             </div>
                           </div>
                           <div class="col-sm-6 mt-3">
-                            <div class="card about-card text-light">
-                              <div class="card-body">
-                                <h5 class="card-title">12<sup>th</sup></h5>
-                                <div class="card-text">
-                                  <div>
-                                    GOVT. HIGH SECONDARY SCHOOL - KHATEGAON
-                                  </div>
-                                  <div>JULY 2019 - JULY 2020</div>
-                                  <div>
-                                    Completed Higher School Certificate
-                                    Examination MP Board in 2018 with 75.8%.
+                            <div
+                              class="card about-card text-light overflow-hidden"
+                            >
+                              <div
+                                class="card-body text-center text-md-start text-light"
+                              >
+                                <img
+                                  src="assets/images/web-first.png"
+                                  class="img-fluid w-100"
+                                  alt=""
+                                />
+                                <div class="card__content p-md-5">
+                                  <h5 class="card-title fw-bold pt-3 pt-md-0">
+                                    Wev Development
+                                  </h5>
+                                  <div class="card__description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco.
                                   </div>
                                 </div>
-                                <hr />
                               </div>
                             </div>
                           </div>
@@ -419,6 +455,7 @@
                 </div>
               </div>
               <!-- ===================About Me End ================= -->
+              <!-- ===================Resume Start ================= -->
               <div
                 class="tab-pane fade"
                 id="nav-Resume"
@@ -432,95 +469,244 @@
                     id="tab1"
                     role="tabpanel"
                   >
-                    <section class="resume" id="my-resume">
-                      <div class="container text-dark">
-                        <div class="h2 text-start mt-2 text-white">
-                          <h2 class="mb-3 border-bottom-5 fw-bold">Resume</h2>
-                        </div>
-                        <div class="row mt-3">
-                          <div class="col-sm-6 mt-3">
-                            <div class="card resume-card">
-                              <div class="card-body">
-                                <h5 class="card-title">10<sup>th</sup></h5>
-                                <div class="card-text">
-                                  <div>
-                                    GAYATRI VIDYA MANDIR HIGHR SCHOOL -
-                                    KHATEGAON
-                                  </div>
-                                  <div>JULY 2017 - JULY 2018</div>
-                                  <div>
-                                    Completed Higher School Certificate
-                                    Examination MP Board in 2018 with 75.8%.
-                                  </div>
-                                </div>
-                                <hr />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-6 mt-3">
-                            <div class="card resume-card">
-                              <div class="card-body">
-                                <h5 class="card-title">12<sup>th</sup></h5>
-                                <div class="card-text">
-                                  <div>
-                                    GOVT. HIGH SECONDARY SCHOOL - KHATEGAON
-                                  </div>
-                                  <div>JULY 2019 - JULY 2020</div>
-                                  <div>
-                                    Completed Higher School Certificate
-                                    Examination MP Board in 2018 with 75.8%.
-                                  </div>
-                                </div>
-                                <hr />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-6 mt-3">
-                            <div class="card resume-card">
-                              <div class="card-body">
-                                <h5 class="card-title">UG</h5>
-                                <div class="card-text">
-                                  <div>
-                                    HARDA ADHRSH COLLEGE HARDA (MADHYA PRADESH)
-                                    BCA
-                                  </div>
-                                  <div>JUNE 2020 - MARCH 2023</div>
-                                  <div>
-                                    Completed BCA from Harda Adarsh College,
-                                    affiliated to Barkatullah University Bhopal
-                                    Percentage 65.50%
-                                  </div>
-                                </div>
-                                <hr />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-6 mt-3">
-                            <div class="card resume-card">
-                              <div class="card-body">
-                                <h5 class="card-title">PG</h5>
-                                <div class="card-text">
-                                  <div>
-                                    PATEL COLLEGE OF SCIENCE & TECHNOLOGY -
-                                    INDORE
-                                  </div>
-                                  <div>JULY 2023 -</div>
-                                  <div>
-                                    currently i'm pursuing mca from patel
-                                    college of institute indore
-                                    <div>&nbsp;</div>
-                                  </div>
-                                </div>
-                                <hr />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                    <header>
+                      <h2 class="h2 article-title">Resume</h2>
+                    </header>
+
+                    <section class="timeline">
+                      <div class="title-wrapper">
+                        <!-- <div class="icon-box"> -->
+                        <ion-icon name="book-outline"></ion-icon>
+                        <span class="h3 me-5">&nbsp;&nbsp; Education</span>
+                        <!-- </div> -->
                       </div>
+
+                      <ol class="timeline-list mt-5">
+                        <li class="timeline-item">
+                          <h4 class="h4 timeline-item-title">
+                            GAYATRI VIDYA MANDIR HIGHR SCHOOL - KHATEGAON
+                          </h4>
+
+                          <span>JULY 2017 - JULY 2018</span>
+
+                          <p class="timeline-text">
+                            Completed Higher School from Gayatri Vidya Mandir
+                            Highr School khategaon, Certificate Examination MP
+                            Board in 2018 with 75.8%.
+                          </p>
+                        </li>
+                        <li class="timeline-item">
+                          <h4 class="h4 timeline-item-title">
+                            GOVT. HIGH SECONDARY SCHOOL - KHATEGAON
+                          </h4>
+
+                          <span>JULY 2019 - JULY 2020</span>
+
+                          <p class="timeline-text">
+                            Completed 12th grade with a specialization in
+                            Science demonstrating a strong foundation in
+                            sciences. Achieved 75.8% in the 12th-grade board
+                            examinations.
+                          </p>
+                        </li>
+
+                        <li class="timeline-item">
+                          <h4 class="h4 timeline-item-title">
+                            HARDA ADHRSH COLLEGE HARDA (MADHYA PRADESH) BCA
+                          </h4>
+
+                          <span>JUNE 2020 - MARCH 2023</span>
+
+                          <p class="timeline-text">
+                            Completed BCA from Harda Adarsh College, affiliated
+                            to Barkatullah University Bhopal Percentage 65.50%
+                          </p>
+                        </li>
+
+                        <li class="timeline-item">
+                          <h4 class="h4 timeline-item-title">
+                            PATEL COLLEGE OF SCIENCE & TECHNOLOGY - INDORE
+                          </h4>
+
+                          <span>JULY 2023 - Continue</span>
+
+                          <p class="timeline-text">
+                            Currently pursuing MCA. at Patel College of Science
+                            & Technology Indore.
+                          </p>
+                        </li>
+                      </ol>
                     </section>
+
+                    <div class="row col-12 justify-content-center px-2 pt-3">
+                      <section class="skill">
+                        <h3 class="h3 skills-title">My skills</h3>
+
+                        <ul
+                          class="skills-list content-card rounded-4 px-5 mt-2 shadow-lg"
+                        >
+                          <li class="skills-item nav-item">
+                            <div class="title-wrapper">
+                              <h5 class="h5">Java <sub>70%</sub></h5>
+                              <!-- <data value="50">50%</data> -->
+                            </div>
+
+                            <div class="skill-progress-bg">
+                              <div
+                                class="skill-progress-fill"
+                                style="width: 70%"
+                              ></div>
+                            </div>
+                          </li>
+
+                          <li class="skills-item">
+                            <div class="title-wrapper">
+                              <h5 class="h5">Designing <sub>60%</sub></h5>
+                              <!-- <data value="60">60%</data> -->
+                            </div>
+
+                            <div class="skill-progress-bg">
+                              <div
+                                class="skill-progress-fill"
+                                style="width: 60%"
+                              ></div>
+                            </div>
+                          </li>
+
+                          <li class="skills-item">
+                            <div class="title-wrapper">
+                              <h5 class="h5">Java Script <sub>40%</sub></h5>
+                              <!-- <data value="40">40%</data> -->
+                            </div>
+
+                            <div class="skill-progress-bg">
+                              <div
+                                class="skill-progress-fill"
+                                style="width: 40%"
+                              ></div>
+                            </div>
+                          </li>
+
+                          <li class="skills-item">
+                            <div class="title-wrapper">
+                              <h5 class="h5">DataBase <sub>50%</sub></h5>
+                              <!-- <data value="50">50%</data> -->
+                            </div>
+
+                            <div class="skill-progress-bg">
+                              <div
+                                class="skill-progress-fill"
+                                style="width: 50%"
+                              ></div>
+                            </div>
+                          </li>
+                        </ul>
+                      </section>
+                    </div>
                   </div>
                 </div>
               </div>
+              <!-- ===================Resume End ================= -->
+              <!-- ===================Skill Start ================= -->
+              <div
+                class="tab-pane fade"
+                id="nav-Skill"
+                role="tabpanel"
+                aria-labelledby="nav-Skill-tab"
+                tabindex="0"
+              >
+                <h2 class="mb-3 border-bottom-5 fw-bold">Skill</h2>
+
+                <section class="about" id="my-about">
+                  <div class="container">
+                    <div class="row mt-2">
+                      <div class="col-sm-6 mt-3">
+                        <div class="card about-card">
+                          <div
+                            class="card-body text-center text-md-start text-light"
+                          >
+                            <h5 class="card-title">
+                              <img
+                                src="assets/images/icon-design.svg"
+                                alt="icon-design"
+                              />
+                              <span class="h4 fw-bold d-flex d-md-inline pt-2"
+                                >&nbsp; Learning Web Design</span
+                              >
+                            </h5>
+                            <div class="card-text">
+                              <div>
+                                GAYATRI VIDYA MANDIR HIGHR SCHOOL - KHATEGAON
+                              </div>
+                              <div>JULY 2017 - JULY 2018</div>
+                              <div>
+                                Completed Higher School Certificate Examination
+                                MP Board in 2018 with 75.8%.
+                              </div>
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 mt-3">
+                        <div class="card about-card text-light">
+                          <div class="card-body">
+                            <h5 class="card-title">12<sup>th</sup></h5>
+                            <div class="card-text">
+                              <div>GOVT. HIGH SECONDARY SCHOOL - KHATEGAON</div>
+                              <div>JULY 2019 - JULY 2020</div>
+                              <div>
+                                Completed Higher School Certificate Examination
+                                MP Board in 2018 with 75.8%.
+                              </div>
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-sm-6 mt-3">
+                        <div class="card about-card text-light">
+                          <div class="card-body">
+                            <h5 class="card-title">10<sup>th</sup></h5>
+                            <div class="card-text">
+                              <div>
+                                GAYATRI VIDYA MANDIR HIGHR SCHOOL - KHATEGAON
+                              </div>
+                              <div>JULY 2017 - JULY 2018</div>
+                              <div>
+                                Completed Higher School Certificate Examination
+                                MP Board in 2018 with 75.8%.
+                              </div>
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 mt-3">
+                        <div class="card about-card text-light">
+                          <div class="card-body">
+                            <h5 class="card-title">12<sup>th</sup></h5>
+                            <div class="card-text">
+                              <div>GOVT. HIGH SECONDARY SCHOOL - KHATEGAON</div>
+                              <div>JULY 2019 - JULY 2020</div>
+                              <div>
+                                Completed Higher School Certificate Examination
+                                MP Board in 2018 with 75.8%.
+                              </div>
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <!-- ===================Skill End ================= -->
+              <!-- ===================Project Start ================= -->
+
               <div
                 class="tab-pane fade"
                 id="nav-Projects"
@@ -530,15 +716,77 @@
               >
                 2222222222
               </div>
+              <!-- ===================Project End ================= -->
+              <!-- ============Gallary Start============= -->
               <div
                 class="tab-pane fade"
-                id="nav-Skill"
+                id="nav-Gallary"
                 role="tabpanel"
-                aria-labelledby="nav-Skill-tab"
+                aria-labelledby="nav-Gallary"
                 tabindex="0"
               >
-                3333333333
+                <section class="gallary">
+                  <div
+                    id="carouselExampleInterval"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-inner">
+                      <div
+                        class="carousel-item active"
+                        data-bs-interval="10000"
+                      >
+                        <img
+                          src="assets/gallary/slider/sliderimg1.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img
+                          src="assets/gallary/slider/slider2.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/gallary/slider/slider3.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleInterval"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleInterval"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </section>
               </div>
+              <!-- ============Gallary End============= -->
+              <!-- ===================Contact Start ================= -->
+
               <div
                 class="tab-pane fade"
                 id="nav-Contact"
@@ -548,12 +796,13 @@
               >
                 444444444444
               </div>
+              <!-- ===================Contact Start ================= -->
             </div>
           </main>
         </div>
       </div>
 
-      <footer class="bg-inverse text-white py-4">
+      <!-- <footer class="bg-inverse text-white py-4">
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-sm-6 pl-0">
@@ -613,9 +862,9 @@
             <div class="col-12 text-right small">@2017 Company Name</div>
           </div>
         </div>
-      </footer>
+      </footer> -->
 
-      <div
+      <!-- <div
         id="modal1"
         class="modal fade"
         tabindex="-1"
@@ -711,7 +960,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <script src="/assets/bootstrap-5.2.3-dist/js/bootstrap.js"></script>
     <script src="./assets/js/script.js"></script>
